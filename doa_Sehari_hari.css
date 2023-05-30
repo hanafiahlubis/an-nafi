@@ -1,0 +1,308 @@
+@font-face {
+    font-family: naruto;
+    src: url(./ninja_naruto/njnaruto.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #395B64;
+    position: sticky;
+    top: 0;
+    min-height: 601px;
+
+}
+
+.image {
+    height: 28.8rem;
+    border-radius: 1pc solid;
+    background-image: url(./image/doa.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-color:rgba(228 249 245 /40%)
+}
+
+.tembus {
+    width: 100%;
+    height: 100%;
+    background-color: #E4F9F5;
+    opacity: .5;
+}
+
+
+.iklan {
+    background-color: #2C3333;
+
+    height: 25px;
+    margin: 2px 0px;
+    display: flex;
+    align-items: center;
+    color: #A5C9CA;
+}
+
+.left {
+    width: 42%;
+    background-color: #EEEEEE;
+    height: 16rem
+}
+
+.left:nth-child(2) {
+    text-align: right;
+}
+
+.reight {
+    width: 50%;
+    background-color: #EEEEEE;
+}
+
+.container2 {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.reight:nth-child(2) {
+    text-align: right;
+}
+
+.paragraf {
+    font-family: 'Uthmani', serif;
+    color: #584810;
+    width: 100%;
+    text-align: right;
+    padding: 0 13px;
+    font-size: 20px;
+}
+
+.kiri {
+    text-align: left;
+    padding: 0 5px;
+}
+
+.artinya {
+    font-family: tahoma, sans-serif;
+    text-align: center;
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), -10px -10px 10px rgba(0, 0, 0, .6);
+    background-color: #11999E;
+    height: 66px;
+}
+header {
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.judul {
+    width: 10rem;
+    display: flex;
+    background: #11999E;
+    align-items: center;
+    justify-content: space-between
+}
+
+.judul h3 {
+    color: #40514E;
+    font-family: naruto;
+}
+.nav {
+    display: flex;
+    width: 21rem;
+    background: #11999E;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 5px;
+    background-color: #E4F9F5;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 11px;
+}
+.nav a:hover {
+    background: #40514E;
+    color: #E4F9F5;
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 17rem;
+    width: 25rem;
+    padding: 17px 5px;
+    background: #EEE;
+    border-radius: 14px;
+    margin: 5px;
+}
+
+.output {
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer {
+    height: 123px;
+    display: grid;
+    /* padding: 5px; */
+    background-color: #11999E;
+}
+.tombol {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 84px
+}
+.tombol button {
+    width: 99px;
+    height: 51px;
+    border-radius: 28px;
+    border: 0 solid
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px 0;
+    height: 50px;
+}
+.footer img {
+    height: 57px;
+    width: 57px;
+}
+.ikon {
+    height: 73px;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.hpku {
+    display: none;
+}
+.openbtn {
+    display: none;
+}
+
+.tampilanMenu {
+    width: 184px;
+    display: none;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    height: 75.1%;
+    top: 0;
+    background-color: #11999E;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.tampilanMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #000;
+    display: grid;
+    align-items: center;
+    transition: 0.3s;
+}
+.menu a:checked {
+    background-color: #40514E;
+    color :#E4F9F5;
+}
+
+.menu {
+    display: grid;
+    height: 100%;
+    text-align: center
+}
+
+.tampilanMenu a:hover {
+    color: #f1f1f1;
+}
+
+.tampilanMenu .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #11999E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+@media(max-width:928px) {
+    .hp>a>img {
+        width: 49px;
+        height: 49px;
+    }
+}
+
+@media(max-width:508px){
+    .nav {
+        display: none;
+    } 
+    .openbtn {
+        display: flex;
+    }
+    .tampilanMenu {
+        display: flex;
+    }    .hp>a>img {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+@media (max-width:389px) {
+    .container-3 {
+        height: 21rem;
+    }
+}
+@media (max-width:297px) {
+    .container-3 {
+        height: 27rem;
+    }
+}

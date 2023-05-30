@@ -1,0 +1,230 @@
+@font-face {
+    font-family: naruto;
+    src: url(./ninja_naruto/njnaruto.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), -10px -10px 10px rgba(0, 0, 0, .6);
+    background-color: #11999E;
+    height: 66px;
+}
+
+.judul {
+    width: 10rem;
+    display: flex;
+    background: #11999E;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav {
+    display: flex;
+    width: 21rem;
+    background: #11999E;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+}
+
+.judul h3 {
+    font-family: naruto;
+    font-size: 20px;
+    color: #40514E;
+}
+
+.nav a {
+    margin: 0 5px;
+    background-color: #E4F9F5;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 11px;
+}
+
+.nav a:hover {
+    background: #40514E;
+    color: #E4F9F5;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    background-color: #E4F9F5;
+}
+
+main img {
+    width: 80%;
+    margin-top: 83px;
+    height: 28.69rem;
+    border-radius: 14px;
+}
+
+footer {
+    background-color: #11999E;
+    height: 6.2rem;
+    display: grid;
+    justify-content: center;
+}
+
+.hp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hp>a>img {
+    height: 59px;
+    width: 59px;
+}
+
+.openbtn {
+    display: none;
+}
+
+.tampilanMenu {
+    width: 184px;
+    display: none;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    height: 56.1%;
+    top: 0;
+    background-color: #11999E;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.tampilanMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 19px;
+    color: #000;
+    display: grid;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.menu a:checked {
+    background-color: #40514E;
+    color: #E4F9F5;
+}
+
+.menu {
+    display: grid;
+    height: 100%;
+    text-align: center
+}
+
+.tampilanMenu a:hover {
+    color: #f1f1f1;
+}
+
+.tampilanMenu .closebtn {
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #11999E;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+@media(max-width:928px) {
+    .hp>a>img {
+        width: 49px;
+        height: 49px;
+    }
+
+}
+
+@media (max-width:587px) {
+    .nav {
+        display: none;
+    }
+
+    .openbtn {
+        display: flex;
+    }
+
+    .tampilanMenu {
+        display: flex;
+    }
+}
+
+@media(max-width:414px) {
+    main img {
+        width: 82%;
+        margin-top: 83px;
+        height: 20.69rem;
+        border-radius: 14px;
+    }
+
+    .tampilanMenu {
+        height: 41.2%;
+    }
+
+    .hp>a>img {
+        width: 41px;
+        height: 41px;
+    }
+
+}
+
+@media (max-width:390px) {
+    main img {
+        width: 85%;
+    }
+
+    .tampilanMenu {
+        height: 45.2%;
+    }
+}
+@media (max-width:375px) {
+    .tampilanMenu {
+        height: 56.2%;
+    }
+}
+
+@media(max-width:280px) {
+    main img {
+        height: 18.69rem;
+    }
+} 

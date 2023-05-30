@@ -1,0 +1,307 @@
+@font-face {
+    font-family: naruto;
+    src: url(./ninja_naruto/njnaruto.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #E5EFC1;
+    overflow-x: hidden;
+
+}
+
+.hidden {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 5px;
+    background-color: #E4F9F5;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 11px;
+}
+
+.nav a:hover {
+    background: #40514E;
+    color: #E4F9F5;
+}
+
+header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #39AEA9;
+
+}
+
+.judul {
+    width: 162px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.judul h3 {
+    color: #40514E;
+    font-family: naruto;
+}
+
+.judul-kota {
+    font-size: 15px;
+    color: #AA8C20;
+}
+
+.aside {
+    overflow: auto;
+    width: 250px;
+    height: 31.2rem;
+    background-color: #557B83;
+}
+
+.card>a:hover {
+    background-color: #39AEA9;
+}
+
+.input2 {
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    height: 34px;
+}
+
+.card {
+    display: grid;
+    width: 100%;
+}
+
+.kota {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    font-size: 34px;
+    margin-bottom: 16px;
+}
+
+.tanggal {
+    display: grid;
+    justify-content: center;
+}
+
+
+.list {
+    display: flex;
+    width: 362px;
+    background-color: #39AEA9;
+    justify-content: space-between;
+    margin: 13px;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    background-color: #E5EFC1;
+    flex-direction: column;
+}
+
+.card-header h4 {
+    text-align: center;
+}
+
+.container-2 {
+    display: flex;
+}
+
+.jadwal-sholat {
+    width: 100%;
+    font-size: 27px;
+    text-align: center;
+    margin: 6px;
+}
+
+.aside2 {
+    display: grid;
+    width: 100%;
+    background-color: #E5EFC1;
+    justify-content: center;
+}
+
+.gambar {
+    width: 250px;
+}
+
+a {
+    color: black;
+    margin-bottom: 5px;
+    display: block;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.footer {
+    display: grid;
+    height: 7rem;
+    background: aqua;
+    justify-content: center
+}
+
+.hp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+}
+
+.hp>a {
+    padding: 0 39px;
+}
+
+.hp>a>img {
+    width: 39px;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+@media(max-width:928px) {
+    .hp>a>img {
+        width: 49px;
+        height: 49px;
+    }
+    .judul{
+        justify-content: flex-start;
+        width: 162px;
+    }
+    .judul h3 {
+        font-size: 22px;
+    }
+
+}
+
+
+@media(max-width:562px) {
+
+    .card-header {
+        width: 27%;
+    }
+
+    .card a {
+        width: 7rem;
+        font-size: 11px;
+    }
+
+    .judul img {
+        width: 50px;
+    }
+
+    .judul h3 {
+        font-size: 13px;
+    }
+
+    .aside {
+        height: 32.6rem;
+    }
+
+    .main {
+        width: 73.5%;
+    }
+
+    .nav a {
+        font-size: 11px;
+    }
+
+    .hp>a {
+        padding: 0 30px;
+    }
+
+    .container-2 {
+        height: 522px;
+    }
+
+    .list {
+        width: 266px;
+    }
+
+    .hp>a>img {
+        width: 41px;
+        height: 41px;
+    }
+
+}
+
+@media (max-width:407px) {
+    .judul {
+        width: 112px;
+
+    }
+
+    .jadwal-sholat {
+        font-size: 23px;
+    }
+
+    .kota {
+        font-size: 0;
+    }
+
+    .list {
+        width: 232px;
+    }
+}
+
+@media(max-width:364px) {
+    .jadwal-sholat h4 {
+        font-size: 14px;
+    }
+
+    .list {
+        width: 169px;
+    }
+
+    .judul-kota {
+        font-size: 18px;
+    }
+    .nav a {
+        margin: 0 2px;
+    }
+
+}
+
+@media(max-width:289px) {
+    .judul h3 {
+        font-size: 13px;
+    }
+
+    .nav a {
+        font-size: 11px;
+        margin: 0 1px;
+    }
+
+    .hp>a>img {
+        width: 25px;
+        height: 25px;
+    }
+}

@@ -1,0 +1,296 @@
+@font-face {
+    font-family: naruto;
+    src: url(./ninja_naruto/njnaruto.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #30E3CA;
+    overflow-x: hidden;
+}
+
+.container-2 {
+    min-height: 50rem;
+    width: 100%;
+    display: grid;
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), -10px -10px 10px rgba(0, 0, 0, .6);
+    background-color: #11999E;
+    height: 66px;
+}
+
+.judul {
+    width: 10rem;
+    display: flex;
+    background: #11999E;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav {
+    display: flex;
+    width: 18.7rem;
+    background: #11999E;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+}
+
+.nav a {
+    margin: 0 5px;
+    background-color: #E4F9F5;
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 11px;
+}
+
+.nav a:hover {
+    background: #40514E;
+    color: #E4F9F5;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.section img {
+    width: 80%;
+    height: 38rem;
+}
+
+.option {
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+main {
+    width: 900px;
+    margin: 80px auto 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6), -10px -10px 10px rgba(0, 0, 0, .6);
+    background-color: #E4F9F5;
+}
+
+select {
+    color: #EDF7FA;
+    background-color: #FF8364;
+    width: 100%;
+    height: 25px;
+}
+
+.namaSuroh {
+    display: flex;
+    justify-content: center;
+}
+
+.namaSuroh h3 {
+    font-size: 32px !important;
+}
+
+.namaSuroh.a h2 {
+    font-size: 16px !important;
+    color: #AA8C20;
+}
+
+.ayatH3 {
+    display: flex;
+    justify-content: center;
+}
+
+.ayat {
+    display: grid;
+}
+
+hr {
+    margin-bottom: 5px;
+}
+
+.output {
+    background-color: #EDF7FA;
+}
+
+.ayatku {
+    display: grid;
+    text-align: end;
+    justify-content: flex-end;
+    padding: 0 24px;
+    font-family: 'Uthmani', serif;
+    color: #584810;
+    font-size: 39px;
+}
+
+.artiku {
+    font-family: tahoma, sans-serif;
+    padding: 5px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #11999E;
+    height: 7rem;
+    display: grid;
+    justify-content: center;
+}
+
+.judul h3 {
+    color: #40514E;
+    font-family: naruto;
+}
+
+.hp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hp>a>img {
+    height: 59px;
+    width: 59px;
+}
+
+
+@media(max-width: 878px) {
+    main {
+        width: 700px;
+    }
+
+    .section img {
+        height: 30rem;
+    }
+
+    .namaSuroh h3 {
+        font-size: 26px !important;
+    }
+
+    .ayatku {
+        font-size: 33px;
+    }
+
+    .artiku {
+        font-size: 12px;
+    }
+
+    .ayatku {
+        font-size: 28px;
+    }
+
+    .hp>a>img {
+        width: 49px;
+        height: 49px;
+    }
+}
+
+@media (max-width:748px) {
+    main {
+        width: 80%;
+    }
+
+    .section img {
+        height: 10%;
+    }
+
+}
+
+@media (max-width: 417px) {
+    .judul {
+        width: 9rem;
+    }
+
+    .judul img {
+        height: 46px;
+        width: 50px;
+    }
+
+    .nav {
+        width: 14rem;
+    }
+
+    .nav a {
+        font-size: 12px;
+        padding: 0 5px
+    }
+
+    .namaSuroh h3 {
+        font-size: 16px !important;
+    }
+
+    .namaSuroh.a h2 {
+        font-size: 12px !important;
+    }
+
+    .ayatku {
+        font-size: 20px;
+    }
+
+    .artiku {
+        font-size: 10px;
+    }
+
+    .ayatH3 h3 {
+        font-size: 15px;
+    }
+
+    .hp>a>img {
+        width: 41px;
+        height: 41px;
+    }
+}
+
+@media (max-width:342px) {
+    .judul {
+        width: 8.5rem;
+    }
+
+    .judul h3 {
+        font-size: 16.2px;
+    }
+
+    .nav {
+        width: 12rem;
+    }
+
+    .nav a {
+        margin: 0 2px;
+        font-size: 10px;
+    }
+}
+
+@media(max-width:290px) {
+    .judul h3 {
+        font-size: px;
+    }
+
+    .nav a {
+        font-size: 9px;
+        padding: 0;
+    }
+}
+
+/* 291 - 342*/
+/* 305 -291*/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doa terkini</title>
+    <link rel="stylesheet" href="./doa_Sehari_hari.css">
+    <link rel="shortcut icon" href="./image/doa123.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="judul">
+                <img src="./image/icons8-mosque-64.png" alt="">
+                <h3>An-Nafi`</h3>
+            </div>
+            <nav>
+                <div class="nav">
+                    <a href="./beranda.html">Beranda</a>
+                    <a href="./quran.html">Al-Qur`an Digital</a>
+                    <a href="./jadwal_sholat.html">Jadwal Sholat</a>
+                </div>
+                <div id="mySidepanel" class="tampilanMenu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <div class="menu">
+                        <a href="./beranda.html">Beranda</a>
+                        <a href="./quran.html">Al-Qur`an Digital</a>
+                        <a href="./jadwal_sholat.html">Jadwal Sholat</a>
+
+                    </div>
+                </div>
+                <button class="openbtn" onclick="openNav()">☰</button>
+
+            </nav>
+        </header>
+        <main>
+            <div class="tembus">
+                <div class="image"></div>
+            </div>
+            <div class="tombol">
+                <button onclick="tampil()">Tampilkan</button>
+            </div>
+            <div class="output"></div>
+        </main>
+        <footer>
+            <div class="footer hp">
+                <a href="https://www.facebook.com/" target="_blank"> <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALlJREFUSEvtldENwjAMRF83gUmATWAy2ASYhG4CuioGq4BaxXHFB5Yq9af3fOe46UiuLlmfxQFnYBt01QNr0xg7uAfF33SjAHWrR+WdP3VrARfg4MQF8PGGAcrYOrdYmgFOpXsJr4A9sGkZkQccC2B8NkIRpQEkfC3Za8gWkWJSyY29VznYASb8aV38DjUHqPObo1YB7Pu0GfwBQwJz/qa/PYNvq+/P/ZQD7Yp2ZqjFr8xGF9pLJt3BAzirNxk7veVWAAAAAElFTkSuQmCC" />
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWdJREFUSEvVldFtAjEQRIdOSCVAJQmVBCpJOiGpJEklRA95Tr712gcfSGDpBJi9nZ3ZWXulO6/VnfPrIQDWkt4kbSRtJf1Wz7ekz5EKSwwOkt5LAhJ/le+AAsY6SiIuXT0AEpwk8dlLYGYUADhxDZsegJPvq6p7RboY/t8VsCk2A7AsBCMJCahwtIj5KQwoqguQBZ4LwMsCCEb4KCzcq8amDiIZVfu36U8vJmAubtazKBEVkNT7OIV+XANATB17eSkCoCNVWkdXlcVmitG/V0mTnBkA0tBgL8uEBWcNTBCiAg2DhmJJYmcZBGYkY5LrIYsKNACmGP0ch4rfXjUzHDdsctfPJZsr9zGBnB7GOD9pk9mEJmvke4B4bFu7relTNsnQvKahlqg+KpqiIoAdg471AjAeF7Ev6bnVGzQnJ6nPIt8Df9XdQNyQbQSwTbEf+vqw84Vj97APUMZsRn3pwsmm9aa95wf4B6WqYBlGFLZBAAAAAElFTkSuQmCC" />
+                </a>
+                <a href="https://www.tiktok.com/" target="_blank">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQtJREFUSEvFldENwjAMRK+TAJvAJMAkwCTAJLAJjIKelCDXTdLSJsI/ldLYZ5+v106No2tcX3MArpIOobG3pE2pyaUA1AYAoGTUALhJOrYEoPZF0jkFUmOCWPcp6S6J55eymgARqEfZ3wHWQZIrM76X6S7c2Uvi/qQJuPgICXF0lEJy6TsgryfZFEXbUNyLYgrAQEgpgJfrnCS6QopjE4wCYAFQYKUHxzYWWYVNpmhqwkUALJYdEDkLqAaQc0q7o6IPpSjwO/Aeg9+czEJ+BkDHdGiDIgTU8d5G0apzS/RTDKQXDrIOahNyXuSp8CCTiucmiMWiD0WPYenYMZRl/2C+kzlumqMsed4c4ANUyUIZJOEr8AAAAABJRU5ErkJggg==" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank"> <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWlJREFUSEvFlT1KQ1EQhb/U1vbai+IG/FlGwEJbwYArUHegonUiCPZuQN1ByAaMlYW9hY1yZObxmNx3vd4QMk3y8jJzzpnfHgu23oLjszSANeAQ2AX2Miqn9u4ZuAD8uXFJKVDgYUXqFPwOOG/7RgAxf60I7i4COQKk6NcigJhLwX9s39J4Zk4jA0kCiL1UpEyOb5Zn1UZExHjdvntaxV6gSYDvROS27FV7/2FEnuy5TcpBiwHE5gs4sK4SiRfgHnjvqFmT+liDqMDzeQscB3U3wAkgFbGViwHUEY/GeCMATIAta0sv8Ezq/1Kg4bk2lpsBYAxszwvgHXEFDALAJXBqQxlbuzhF3kGfQB/YMRAV+QFYMXWx+YoB5DgznRZNhfU2LQZIdYSDKF0aNFluCWYHrWZVRPbZVTHvshOYBrNz2ekPtetavpobKWis66JJiYZHn7mD4/XRHVDgooOT2Hf1Py3tJtdTDp4/ASdOGThG8zgAAAAASUVORK5CYII=">
+                </a>
+            </div>
+            <h3 class="h3">&copy;opyright Ali Hanfiah</h3>
+
+        </footer>
+    </div>
+
+    </footer>
+
+    </div>
+    <script src="./doa_Sehari_hari.js"></script>
+</body>
+
+</html>
